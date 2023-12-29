@@ -5,7 +5,7 @@ interface Props {
 
 const AppLayout = ({ children }: Props) => {
     return (
-        <div className="bg-p-cream h-screen">
+        <div className="bg-p-cream h-screen grid place-items-center ">
             {children}
         </div>
     )
