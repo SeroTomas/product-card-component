@@ -5,7 +5,7 @@ interface Props {
 
 const Button = ({ icon, text }: Props) => {
     return (
-        <button className="bg-p-darkCyan text-white text-sm font-medium flex items-center justify-center py-3 gap-2 rounded-xl">
+        <button className="bg-p-darkCyan text-white text-sm font-medium flex items-center justify-center py-3 gap-2 rounded-xl hover:bg-n-darkBlue">
             <img src={icon} />
             <span>{text}</span>
         </button>
