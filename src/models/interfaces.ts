@@ -1,4 +1,4 @@
-import { ProductType } from "./types"
+
 
 export interface CardInterface {
     images: CardImages
@@ -11,7 +11,7 @@ export interface CardImages {
 }
 
 export interface CardInfo {
-    type: ProductType
+    type: string
     name: string
     description: string
     price: string
