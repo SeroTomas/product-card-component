@@ -1,10 +1,10 @@
-import { AppLayout } from './components'
+import { AppLayout, Card } from './components'
 
 function App() {
 
   return (
     <AppLayout>
-      <h1>hola</h1>
+      <Card />
     </AppLayout>
   )
 }
