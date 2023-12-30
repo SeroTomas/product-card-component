@@ -1,7 +1,8 @@
 import { CardImages } from "@/models";
 import { useEffect, useState } from "react"
+import { ProductImage } from "@/components";
 
-const CardImage = ({mobileImage, desktopImage}: CardImages) => {
+const CardImage = ({ mobileImage, desktopImage }: CardImages) => {
 
     enum DEVICE {
         MOBILE = "mobile",
@@ -9,7 +10,7 @@ const CardImage = ({mobileImage, desktopImage}: CardImages) => {
     }
 
     const [device, setDevice] = useState('');
-    
+
     const hanldeDevice = () => {
         const isMobile = window.innerWidth < 1440;
         isMobile ? setDevice(DEVICE.MOBILE) : setDevice(DEVICE.DESKTOP)
@@ -25,7 +26,7 @@ const CardImage = ({mobileImage, desktopImage}: CardImages) => {
     return (
         <>
             {
-                device === DEVICE.MOBILE ? <img src={mobileImage} /> : <img src={desktopImage} />
+                device === DEVICE.MOBILE ? <ProductImage image={mobileImage} /> : <ProductImage image={desktopImage} />
             }
         </>
     )

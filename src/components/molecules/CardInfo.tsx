@@ -1,11 +1,13 @@
 import { CardInfo } from "@/models"
-import { CardProductType } from "@/components"
+import { ProductType, ProductName, ProductDescription } from "@/components"
 
-const CardInfo = ({ type }: CardInfo) => {
+const CardInfo = ({ type, name, description }: CardInfo) => {
     return (
-        <div className="flex flex-col p-5">
-            <CardProductType type={type} />
+        <div className="flex flex-col gap-3 flex-grow desk:gap-6">
+            <ProductType type={type} />
+            <ProductName name={name} />
+            <ProductDescription description={description}/>
         </div>
     )
 }
-export default CardInfo
+export default CardInfo;
